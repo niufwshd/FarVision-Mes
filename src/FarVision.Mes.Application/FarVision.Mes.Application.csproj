@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>FarVision.Mes</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="SystemService\**" />
+    <EmbeddedResource Remove="SystemService\**" />
+    <None Remove="SystemService\**" />
+  </ItemGroup>
+
+  <!--<ItemGroup>
+    <Compile Remove="OuterDB.cs" />
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\FarVision.Mes.Utils\FarVision.Mes.Utils.csproj" />
+    <ProjectReference Include="..\..\Farvison.Mes.Application.Interface\Farvison.Mes.Application.Interface.csproj" />
+    <ProjectReference Include="..\FarVision.Mes.Domain\FarVision.Mes.Domain.csproj" />
+    <ProjectReference Include="..\FarVision.Mes.Application.Contracts\FarVision.Mes.Application.Contracts.csproj" />
+    <ProjectReference Include="..\FarVision.Mes.EntityFrameworkCore\FarVision.Mes.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp" Version="6.0.0" />
+    <PackageReference Include="Dapper.FastCrud" Version="2.5.0.39" />
+    <PackageReference Include="Volo.Abp.Account.Application" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.Dapper" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.Identity.Application" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application" Version="4.0.0" />
+  </ItemGroup>
+
+</Project>

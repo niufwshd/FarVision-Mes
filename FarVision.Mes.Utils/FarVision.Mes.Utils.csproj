@@ -1,0 +1,76 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <!--<ItemGroup>
+    <Compile Remove="Cache\**" />
+    <Compile Remove="Client\**" />
+    <Compile Remove="Config\**" />
+    <Compile Remove="Context\**" />
+    <Compile Remove="DataExtend\**" />
+    <Compile Remove="DataFormatValidation\**" />
+    <Compile Remove="Extensions\**" />
+    <Compile Remove="FileExt\**" />
+    <Compile Remove="Helper\**" />
+    <Compile Remove="InfluxDb\**" />
+    <Compile Remove="PDA\**" />
+    <EmbeddedResource Remove="Cache\**" />
+    <EmbeddedResource Remove="Client\**" />
+    <EmbeddedResource Remove="Config\**" />
+    <EmbeddedResource Remove="Context\**" />
+    <EmbeddedResource Remove="DataExtend\**" />
+    <EmbeddedResource Remove="DataFormatValidation\**" />
+    <EmbeddedResource Remove="Extensions\**" />
+    <EmbeddedResource Remove="FileExt\**" />
+    <EmbeddedResource Remove="Helper\**" />
+    <EmbeddedResource Remove="InfluxDb\**" />
+    <EmbeddedResource Remove="PDA\**" />
+    <None Remove="Cache\**" />
+    <None Remove="Client\**" />
+    <None Remove="Config\**" />
+    <None Remove="Context\**" />
+    <None Remove="DataExtend\**" />
+    <None Remove="DataFormatValidation\**" />
+    <None Remove="Extensions\**" />
+    <None Remove="FileExt\**" />
+    <None Remove="Helper\**" />
+    <None Remove="InfluxDb\**" />
+    <None Remove="PDA\**" />
+  </ItemGroup>-->
+
+  <ItemGroup>
+    <Compile Remove="PublicVar.cs" />
+    <Compile Remove="Util.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IdentityModel" Version="4.5.0" />
+    <PackageReference Include="InfluxData.Net" Version="8.0.1" />
+    <PackageReference Include="iTextSharp" Version="5.5.13.2" />
+    <PackageReference Include="log4net" Version="2.0.12" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.IdentityModel.Logging" Version="6.8.0" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.8.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="NPOI" Version="2.5.1" />
+    <PackageReference Include="protobuf-net" Version="3.0.73" />
+    <PackageReference Include="protobuf-net-data" Version="3.0.1" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\FarVision.Mes.Application.Contracts\FarVision.Mes.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="YueMES.Base">
+      <HintPath>..\src\packages\YueMES.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="YueMES.Data">
+      <HintPath>..\src\packages\YueMES.Data.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

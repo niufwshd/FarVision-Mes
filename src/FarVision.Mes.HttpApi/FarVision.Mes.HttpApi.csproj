@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>FarVision.Mes</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Farvison.Mes.Application.Interface\Farvison.Mes.Application.Interface.csproj" />
+    <ProjectReference Include="..\FarVision.Mes.Application.Contracts\FarVision.Mes.Application.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Volo.Abp.Account.HttpApi" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.HttpApi" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.TenantManagement.HttpApi" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.HttpApi" Version="4.0.0" />
+  </ItemGroup>
+
+</Project>

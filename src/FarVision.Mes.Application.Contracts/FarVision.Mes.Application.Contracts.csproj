@@ -1,0 +1,53 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>FarVision.Mes</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+  
+    <Compile Remove="Model\ERPModels\**" />
+    <Compile Remove="Model\ExtInterfaceModel\**" />
+    <Compile Remove="Model\SCMModels\**" />
+    <Compile Remove="Model\SystemModel\**" />
+    <Compile Remove="Model\Tool\**" />
+    <Compile Remove="Model\UNModels\**" />
+    <EmbeddedResource Remove="Model\ERPModels\**" />
+    <EmbeddedResource Remove="Model\ExtInterfaceModel\**" />
+    <EmbeddedResource Remove="Model\SCMModels\**" />
+    <EmbeddedResource Remove="Model\SystemModel\**" />
+    <EmbeddedResource Remove="Model\Tool\**" />
+    <EmbeddedResource Remove="Model\UNModels\**" />
+    <None Remove="Model\ERPModels\**" />
+    <None Remove="Model\ExtInterfaceModel\**" />
+    <None Remove="Model\SCMModels\**" />
+    <None Remove="Model\SystemModel\**" />
+    <None Remove="Model\Tool\**" />
+    <None Remove="Model\UNModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Model\DataSaveHandler.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FarVision.Mes.Domain.Shared\FarVision.Mes.Domain.Shared.csproj" />
+    <ProjectReference Include="..\FarVision.Mes.Domain\FarVision.Mes.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="protobuf-net" Version="3.0.73" />
+    <PackageReference Include="protobuf-net-data" Version="3.0.1" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+    <PackageReference Include="Volo.Abp.ObjectExtending" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.Account.Application.Contracts" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.Identity.Application.Contracts" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.TenantManagement.Application.Contracts" Version="4.0.0" />
+    <PackageReference Include="Volo.Abp.FeatureManagement.Application.Contracts" Version="4.0.0" />
+  </ItemGroup>
+
+</Project>
